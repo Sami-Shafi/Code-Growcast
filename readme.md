@@ -1,0 +1,1 @@
+Generate a basic description for an AI Podcast app that I will build with nextjs and convex
