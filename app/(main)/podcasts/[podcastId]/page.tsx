@@ -6,6 +6,7 @@ const SinglePodcast = ({ params }: { params: { podcastId: string } }) => {
 	return (
 		<div>
 			<p>Podcast ID: {podcastId}</p>
+            <h2>Single Podcast Details Page</h2>
 		</div>
 	);
 };
