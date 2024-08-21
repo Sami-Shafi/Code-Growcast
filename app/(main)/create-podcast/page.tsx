@@ -1,13 +1,9 @@
-import React from "react";
+import React from 'react'
 
 const CreatePodcast = () => {
-	return (
-		<div>
-			<h1 className="text-20 font-bold text-white-1">
-				Create Your Dream Podcast
-			</h1>
-		</div>
-	);
-};
+  return (
+    <div>CreatePodcast</div>
+  )
+}
 
-export default CreatePodcast;
+export default CreatePodcast
