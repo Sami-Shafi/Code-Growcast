@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import ConvexClientProvider from "./providers/ConvexClientProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 		default: "GrowCast - Modern AI Podcast",
 	},
 	description:
-		"Growcast is a platform where you can explore and discover the latest prodcasts of popular creators and enrich your knowledge. Join us and access a vast library in a modern app UI and use features like AI Transcriptions, AI Summaries, and more."
+		"Growcast is a platform where you can explore and discover the latest prodcasts of popular creators and enrich your knowledge. Join us and access a vast library in a modern app UI and use features like AI Transcriptions, AI Summaries, and more.",
 };
 
 export default function RootLayout({
@@ -21,7 +22,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<ConvexClerkProvider>{children}</ConvexClerkProvider>
+				<ConvexClientProvider>{children}</ConvexClientProvider>
 			</body>
 		</html>
 	);
